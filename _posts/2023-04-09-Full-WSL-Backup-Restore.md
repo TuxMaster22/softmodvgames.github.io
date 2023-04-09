@@ -57,24 +57,20 @@ Now that we have created the .tar file with all necessary we need to perform a c
 
 WSL needs three main features to work, these are:
 
-Hyper-V (Default Switch, WSL adapter)
-
-Virtual Machine Platform (Manage App Packages)
-
-WSL (Kernel Virtualization)
+**Hyper-V (Default Switch, WSL adapter), Virtual Machine Platform (Manage App Packages), WSL (Kernel Virtualization)**
  
-All of this can be done automatically with the following commands
+All those can be done automatically with the following commands
 
 Open Powershell as administrator,
 
-#Enables the feature
+Enable the feature
 ```powershell
 enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 enable-WindowsOptionalFeature -Online -NoRestart -All -Verbose -FeatureName VirtualMachinePlatform
 enable-WindowsOptionalFeature -Online -All -Verbose -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
  
-##Reboot your machine
+Reboot your machine
 
 After the enablement of the subsystems, this will download and install WSL 2 kernel and install WSL 2 with Ubuntu 20.04, please replace this value with the required distribution
 
