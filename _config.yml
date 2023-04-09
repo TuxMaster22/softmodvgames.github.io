@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "haxor" # "air", "aqua", "contrast", "dark", "dirt", 
 
 # Site Settings
 locale                   : "en-US"
-title                    : "hackconsolascr.io"
+title                    : "Personal Blog about some stuff I've learned. "
 title_separator          : "-"
-name                     : "Hack Consolas"
-description              : "Mas de 10 años de experiencia"
+name                     : "TuxMaster TechPage"
+description              : "Linux  -K8s  - Windows - Azure Sysadmin | CTF Enthusiast"
 url                      : "https://tuxmaster22.github.io/softmodvgames.github.io/#" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "tuxmaster22/softmodvgames.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-logo                     : "/assets/images/logohack.png"
+logo                     : "/assets/images/Sin-título-2.png"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "TuxMaster"
-  avatar           : "/assets/images/avatar.png"
+  avatar           : "/assets/images/rsz_hacker.png"
   bio              : "RHCSA- CKA - CTF player"
   location         : "Costa Rica"
   email            : "tuxmaster22@outlook.com"
