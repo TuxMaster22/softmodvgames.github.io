@@ -20,17 +20,17 @@ In order to perform a full backup of the image and the Disk VHDX file together, 
 
 First list the images that you have installed and look for the name of the image that you want to backup.
 
-```cmd
+```bat
 wsl -l -v
 ```
 
 Then we shutdown WSL to avoid any errors while accessing the files,
-```cmd
+```bat
 wsl  --shutdown
 ```
 
 To make a full backup of the WSL image use the following syntax:
-```cmd
+```bat
 wsl --export <Image Name> <Export location file name.tar>
 ```
  
