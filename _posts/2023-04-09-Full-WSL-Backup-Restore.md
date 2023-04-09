@@ -14,7 +14,7 @@ tags:
 ---
 A clean way to full backup & restore WSL.
 
-Backup:
+**BACKUP**
 
 In order to perform a full backup of the image and the Disk VHDX file together, WSL V2 has the --export  command.
 
@@ -51,7 +51,17 @@ As you can see above, the raw VHDX file is 2.3 GB or so, while the backup .tar f
 
 Therefore, it also compresses all the required files into a tarball.
 
-RESTORE
+
+
+
+
+
+
+
+
+**RESTORE**
+
+
 
 Now that we have created the .tar file with all necessary we need to perform a clean installation to restore the backup.
 
@@ -79,7 +89,7 @@ After the enablement of the subsystems, this will download and install WSL 2 ker
 Start-Process "$env:APPDATA\wsl_update_x64.msi" '/quiet'
 ```
 
-```cmd
+```bat
 CMD
 wsl --set-default-version 2
 wsl --install --distribution "Ubuntu-20.04"
@@ -87,7 +97,7 @@ wsl --install --distribution "Ubuntu-20.04"
  
 With those steps performed now we are ready to perform a full import of the .tar file;
 
-```cmd
+```bat
 wsl --import <Image Name> <Directory where you want to store the imported image> <Directory where the exported .tar file exists>
 ```
 
