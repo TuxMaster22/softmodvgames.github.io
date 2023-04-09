@@ -14,7 +14,8 @@ tags:
 ---
 
 
-Windows login screen the Windows Server 2008 R2 gives STOP Code 0X000000F4
+**Windows Server 2008 R2 gives STOP Code 0X000000F4**
+
 ![image](https://user-images.githubusercontent.com/78656150/230791432-144486c8-a2c0-43fe-bb4e-553ecbda77b2.png)
 
  
@@ -30,28 +31,25 @@ When trying  uninstall got an error code message,
  
 This update modified the registry and it does not allow the server to boot.
 
-Question
-Sign in to vote
-0
-Sign in to vote
-
 If we cannot boot up and want to replace hive files, we need to boot from WinRE, and open CMD. 
 ```bat
 cd C:\windows\system32\config
 ```
 Backup the current system/software hive:
 ```bat
-      Ren system system_backup
-      Ren Software Software_backup 
+ren system system_backup
+ren Software Software_backup 
 ```
 
 3. Replace the system / software hive by:
 ```bat
-     Copy C:\windows\system32\config\regback\software C:\windows\system32\config\software
-     Copy C:\windows\system32\config\regback\system C:\windows\system32\config\system
+Copy C:\windows\system32\config\regback\software C:\windows\system32\config\software
+Copy C:\windows\system32\config\regback\system C:\windows\system32\config\system
 ```
 Now reboot
 
 By making a RegBack procedure (swapping system & software hives with the ones within RegBack folder), and by changing the default control set value to number 2 (Last Known Good).
+
+![image](https://user-images.githubusercontent.com/78656150/230791568-a97adede-c7f7-4672-bfca-bc733f477a48.png)
 
  Any faulty configuration made by any software, is reverted and now the server boots as expected,
