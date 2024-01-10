@@ -1,7 +1,7 @@
 ---
 layout: single
 title: IMF Machine Writeup
-date: 2023-01-10 3:35:00
+date: 2024-01-10 3:35:00
 classes: wide
 header:
   teaser: /assets/images/slae32.png
